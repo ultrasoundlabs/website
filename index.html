@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- U entered the dev tools to see what stack we use? -->
+    <!-- — Raw HTML, whenever possible — like here. Fuck JavaScript, Node.js, React, Next.js, etc. -->
+    <!-- I'm lowkey finna rewrite all our Web3 frontend in Rust. -->
+    <!-- — Alex Hook, 2025/05/17 -->
+
+    <title>Ultrasound Labs</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ultrasound Labs is a tight-knit crew of developers focused on building ultrasound-grade solutions that actually move Web3 forward.">
+    <meta name="keywords" content="Ultrasound Labs, Web3, Ethereum, L2s, Tron, Untron, blockchain, technology, innovation">
+    <meta name="author" content="Ultrasound Labs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ultrasoundlabs.org/">
+    <meta property="og:title" content="Ultrasound Labs">
+    <meta property="og:description" content="Ultrasound Labs is a tight-knit crew of developers focused on building ultrasound-grade solutions that actually move Web3 forward.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ultrasoundlabs.org/">
+    <meta property="twitter:title" content="Ultrasound Labs">
+    <meta property="twitter:description" content="Ultrasound Labs is a tight-knit crew of developers focused on building ultrasound-grade solutions that actually move Web3 forward.">
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .message-box {
+            max-width: 800px;
+            padding: 40px;
+            background-color: black;
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transition: opacity 3s ease-out, transform 3s ease-out;
+            border-radius: 8px;
+        }
+        .message {
+            white-space: pre-line;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            letter-spacing: 0.3px;
+            text-align: justify;
+            font-feature-settings: "liga" 1, "calt" 1;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .message-box {
+                transition: none;
+            }
+            .fade-in {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box" role="main">
+        <h1>We Are Ultrasound Labs</h1>
+        <div class="message" role="article">Ultrasound Labs is a tight-knit crew of developers focused on building ultrasound-grade solutions that actually move Web3 forward.
+
+We're building Untron, a platform dedicated to streamlining and accelerating transition of Tron USDT's users and ecosystem to Ethereum and L2s. Because nearly all our work ships under the Untron banner, you won't see "Ultrasound Labs" plastered everywhere.
+
+We've had no bandwidth to build a good website for this domain, as it wouldn't help change the world as much as Untron anyway. We run on the founder's personal funds plus whatever income we get from Untron. We don't hire, unless you're ready to work for free. Follow along.</div>
+        <div class="contact-info" role="contentinfo">
+            ULTRASOUND LABS LLC<br>
+            შპს ულტრასაუნდ ლაბს<br>
+            6000 Batumi, Georgia<br>
+            <a href="mailto:contact@ultrasoundlabs.org">contact@ultrasoundlabs.org</a><br><br>
+            <a href="https://untron.fi" target="_blank" rel="noopener noreferrer">untron.fi</a><br>
+            <a href="https://x.com/untronfi" target="_blank" rel="noopener noreferrer">x.com/untronfi</a><br>
+            <a href="https://github.com/ultrasoundlabs" target="_blank" rel="noopener noreferrer">github.com/ultrasoundlabs</a><br>
+            <a href="https://x.com/alexhooketh" target="_blank" rel="noopener noreferrer">x.com/alexhooketh</a> (founder)
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.message-box').classList.add('fade-in');
+            }, 200);
+        });
+    </script>
+</body>
+</html>
